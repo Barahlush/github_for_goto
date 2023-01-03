@@ -1,3 +1,6 @@
+from post import Post
+
+
 class User:
     def __init__(self, name, age):
         self.name = name
