@@ -6,9 +6,6 @@ def print_post(post):
     print(f'Author: {post.get_user()}')
     print(f'Timestamp: {post.get_timestamp()}')
 
-def create_post(title, content, user):
-    user.create_post(title, content)
-
 def main():
     user = User('John', 30)
     post = user.create_post('Hello World', 'This is my first post')
