@@ -1,6 +1,11 @@
 from user import User
 
 
+class Like:
+    def __init__(self):
+        pass
+
+
 def print_post(post):
     print(f'Title: {post.get_title()}')
     print(f'Content: {post.get_content()}')
@@ -9,6 +14,7 @@ def print_post(post):
 
 
 def main():
+    like = Like()
     user = User('John', 30)
     post = user.create_post('Hello World', 'This is my first post')
     print_post(post)
