@@ -1,5 +1,6 @@
 import time
 
+
 class Post:
     def __init__(self, user, title, content):
         self.user = user
@@ -15,7 +16,6 @@ class Post:
 
     def get_timestamp(self):
         return self.timestamp
-    
+
     def get_user(self):
         return self.user.get_name()
-
